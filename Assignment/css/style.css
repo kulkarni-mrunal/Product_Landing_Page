@@ -1,0 +1,1340 @@
+/*--- Quicksand font link---*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/*---Spartan font link---*/
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  color: #ffffff;
+  background-color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 100%;
+  overflow-x: hidden;
+}
+
+.top-section .menu {
+  margin: 1rem;
+}
+.top-section .search-wrap {
+  width: 490px;
+  height: 65px;
+  display: block;
+  margin: -2rem 0 0 1.8rem;
+}
+.top-section input#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 28px;
+  padding: 0 25px;
+  font-size: 16px;
+  border: 1.5px solid rgba(251, 251, 251, 0.6784313725);
+  border-radius: 12px;
+  outline: none;
+  background-color: rgba(251, 251, 251, 0.6784313725);
+}
+.top-section input#search-bar:focus {
+  border: 1.5px solid #55C2FF;
+  transition: 0.35s ease;
+  color: #fff;
+}
+.top-section input#search-bar:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+.top-section input#search-bar:focus::-moz-placeholder {
+  -moz-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+.top-section input#search-bar:focus:-ms-placeholder {
+  -ms-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+.top-section .search-icon {
+  position: relative;
+  float: left;
+  font-size: 15px;
+  top: -22px;
+  right: 0px;
+  left: 8px;
+  color: #fff;
+}
+
+/*=========Common code ==========*/
+.colored-btn {
+  height: 52px;
+  background-color: #FFAC30;
+  border-radius: 26px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.colored-btn:hover {
+  background-color: transparent;
+  border: 2px solid #FFAC30;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-bottom: -10px;
+}
+
+.sub-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.info {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 612px;
+  margin-top: 30px;
+}
+
+/*=========Common code ==========*/
+/*=========Rating code starts==========*/
+.rating-container {
+  padding: 10px 0;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-size: 25px;
+  color: #444;
+  position: relative;
+}
+.rating-container .star {
+  display: flex;
+}
+.rating-container .star.yellow {
+  color: #FFAC30;
+}
+.rating-container .rating {
+  width: var(--percent, 0%);
+  height: 100%;
+  overflow: hidden;
+}
+.rating-container .grey {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+}
+
+.review-count {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFAC30;
+}
+
+/*=========Rating code ends==========*/
+/*=======Nav-bar Section starts==========*/
+.navbar-nav {
+  margin: auto;
+  text-align: center;
+}
+
+.nav-item {
+  margin-right: 55px;
+}
+
+.bottom-line {
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+  /* For positioning the bottom line */
+}
+.bottom-line::after {
+  content: " ";
+  position: absolute;
+  bottom: 6px;
+  left: 15px;
+  width: 0;
+  height: 2px;
+  background-color: #FFAC30;
+  transition: width 0.3s ease;
+}
+.bottom-line:hover {
+  color: #FFAC30;
+}
+.bottom-line:hover::after {
+  width: calc(100% - 24px);
+  left: 15px;
+}
+
+.dropdown .nav-link {
+  color: #ffffff;
+}
+
+.dropdown-toggle::after {
+  content: url(../images/down-triangle.svg);
+  vertical-align: 0;
+  border: none;
+}
+
+.nav-link:focus {
+  color: #FFAC30;
+}
+
+/*=======Nav-bar Section ends==========*/
+/*=======banner Section starts==========*/
+@-webkit-keyframes fade-in-out {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px) opacity(0%);
+  }
+  30% {
+    letter-spacing: 0;
+    filter: blur(0) opacity(1);
+  }
+  70% {
+    letter-spacing: 0;
+    filter: blur(0) opacity(1);
+  }
+  100% {
+    letter-spacing: -0.5em;
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px) opacity(0%);
+  }
+  30% {
+    letter-spacing: 0;
+    filter: blur(0) opacity(1);
+  }
+  70% {
+    letter-spacing: 0;
+    filter: blur(0) opacity(1);
+  }
+  100% {
+    letter-spacing: -0.5em;
+    filter: blur(12px) opacity(0%);
+  }
+}
+.banner-sec .blurOut {
+  color: #55C2FF;
+  text-shadow: 2px 2px 5px #55C2FF;
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-size: 300px;
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+  -webkit-animation-name: fade-in-out;
+          animation-name: fade-in-out;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+.banner-sec .car-image {
+  position: relative;
+  top: 0rem;
+}
+.banner-sec .car-image .img-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 30px;
+}
+
+/*=======banner Section ends==========*/
+.about-sec {
+  position: relative;
+  top: -13rem;
+}
+.about-sec .price {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #55C2FF;
+}
+.about-sec .offset-lg-3 {
+  margin-left: 22% !important;
+}
+.about-sec .features-wrap .name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #55C2FF;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+.about-sec .features-wrap .sub-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.about-sec .left-img {
+  transform: translateY(-8%);
+  width: 100%;
+}
+.about-sec .left-img img {
+  position: relative;
+  z-index: 2;
+}
+
+.price-sec {
+  background: url(../images/bg-wave.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  margin-top: -20rem;
+}
+.price-sec .mt-6 {
+  margin-top: 6rem;
+}
+.price-sec .nav-tabs {
+  border-bottom: none;
+}
+.price-sec .nav-tabs .nav-link {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  border: none;
+  padding: 0;
+}
+.price-sec .nav-tabs .nav-link.active {
+  color: #FFAC30;
+  background-color: transparent !important;
+  border-bottom: 1px solid #FFAC30;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.price-sec .varient-table .table {
+  color: #ffffff;
+}
+.price-sec .varient-table .table thead tr {
+  background-color: rgba(112, 110, 110, 0.9882352941);
+  border-radius: 20px !important;
+}
+.price-sec .varient-table .table thead tr th {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #55C2FF;
+}
+.price-sec .varient-table .table thead .b-radius {
+  border-radius: 12px 0 0 12px;
+}
+.price-sec .varient-table .table thead .b-radius1 {
+  border-radius: 0 12px 12px 0;
+}
+.price-sec .varient-table .table tbody tr td .header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.price-sec .varient-table .table tbody tr td .sub-header {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.price-sec .varient-table .table tbody tr td span {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFAC30;
+}
+.price-sec .varient-table .table tbody tr td .offer-btn {
+  width: 170px;
+  height: 39px;
+  border-radius: 20px;
+  border: 2px solid #FFAC30;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.5;
+}
+.price-sec .varient-table .table tbody tr td .offer-btn:hover {
+  background-color: #FFAC30;
+  color: #000;
+  font-weight: 500;
+}
+.price-sec .view {
+  color: #FFAC30;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mileage-sec .table {
+  color: #ffffff;
+}
+.mileage-sec .table thead tr {
+  background-color: rgba(112, 110, 110, 0.9882352941);
+  border-radius: 20px !important;
+}
+.mileage-sec .table thead tr th {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #55C2FF;
+  border-style: none;
+}
+.mileage-sec .table thead tr .b-radius {
+  border-radius: 12px 0 0 12px;
+}
+.mileage-sec .table thead tr .b-radius1 {
+  border-radius: 0 12px 12px 0;
+}
+.mileage-sec .table tbody tr td {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 20px 20px 10px 20px;
+}
+.mileage-sec .table > :not(:first-child) {
+  border-top: none;
+}
+
+.advice-sec .m-top {
+  margin-top: 4rem;
+}
+.advice-sec .sub-title {
+  font-family: "League Spartan", sans-serif;
+  font-size: 64px;
+  font-weight: 200;
+  line-height: 82px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFAC30;
+  margin-bottom: 0px;
+}
+.advice-sec .title {
+  font-family: "League Spartan", sans-serif;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 82px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.advice-sec .line {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 1rem;
+}
+.advice-sec .nav-tabs {
+  border-bottom: 0;
+}
+.advice-sec .nav-tabs .nav-item {
+  border-right: 1px solid #ffffff;
+  margin-right: 0;
+}
+.advice-sec .nav-tabs .nav-item:last-child {
+  border-right: none;
+}
+.advice-sec .nav-tabs .nav-link {
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  padding: 0.3px 3.2rem;
+}
+.advice-sec .nav-tabs .nav-link:hover {
+  border: none;
+}
+.advice-sec .nav-tabs .nav-link:focus-visible {
+  border: none;
+  outline: 0;
+}
+.advice-sec .nav-tabs .nav-link.active {
+  background-color: transparent;
+  color: #FFAC30;
+  border: none;
+}
+.advice-sec .btn-wrap {
+  position: relative;
+}
+.advice-sec .btn-wrap .v-more {
+  width: 209px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #FFAC30;
+  color: #FFAC30;
+  border-radius: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.advice-sec .btn-wrap .v-more:hover {
+  background-color: #FFAC30;
+  color: #000;
+}
+.advice-sec .header {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: normal;
+}
+.advice-sec .word {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  font-size: 96px;
+  line-height: normal;
+}
+.advice-sec .sub-header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: normal;
+}
+.advice-sec .text {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.advice-sec .border-top {
+  border-top: 2px solid #ffffff !important;
+}
+.advice-sec .border-top .green-text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00BA6C;
+  margin-left: 2rem;
+}
+.advice-sec .border-top .red-text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FE5959;
+  margin-left: 2rem;
+}
+.advice-sec .border-top ul li {
+  margin-bottom: 17px;
+}
+
+.review-sec {
+  position: relative;
+  top: 5rem;
+}
+.review-sec::before {
+  content: url(../images/quote.svg);
+  position: absolute;
+  left: 20px;
+}
+.review-sec h2 {
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 141px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-bottom: -2rem;
+}
+.review-sec h5 {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 141px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+}
+.review-sec .m-left {
+  margin-left: 1.5rem;
+}
+.review-sec .border-rectangle {
+  width: 367px;
+  height: 307px;
+  border: 3px solid #ffffff;
+  padding: 20px;
+  position: relative;
+}
+.review-sec .border-rectangle p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.review-sec .border-rectangle .user-info {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
+}
+.review-sec .border-rectangle .star-rating .rating-container {
+  font-size: 18px;
+  margin-left: 0;
+  padding: 6px 0;
+}
+.review-sec .rating-container {
+  font-size: 52px;
+  margin-left: 1.5rem;
+  padding: 25px 0;
+}
+.review-sec .review-count {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin: 54px 0 0 10px;
+}
+.review-sec .word {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 94px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.review-sec .review-btn {
+  width: auto;
+  height: 48px;
+  border-radius: 20px;
+  border: 2px;
+  border: 2px solid #FFAC30;
+  margin-left: 1.5rem;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFAC30;
+}
+.review-sec .v-more {
+  width: 209px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #FFAC30;
+  color: #FFAC30;
+  border-radius: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.review-sec .v-more:hover {
+  background-color: #FFAC30;
+  color: #000;
+}
+.review-sec .filter-btn {
+  width: auto;
+  height: 48px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 2rem;
+}
+
+/*=======Video Section starts==========*/
+.video-sec {
+  position: relative;
+  top: 17rem;
+}
+.video-sec .m-left {
+  margin-left: 4rem;
+}
+.video-sec .img-m-left {
+  margin-left: -4rem;
+}
+.video-sec h2 {
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 141px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-bottom: -2rem;
+}
+.video-sec h5 {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 141px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+}
+.video-sec p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 80%;
+}
+.video-sec .white-ellipse {
+  width: 162px;
+  height: 162px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  position: relative;
+  margin: 2rem auto;
+}
+.video-sec .white-ellipse .triangle {
+  position: absolute;
+  left: 60px;
+  bottom: 42px;
+}
+.video-sec .video-slider-wrap {
+  overflow-x: hidden;
+  padding: 0px 0px 30px 0;
+}
+.video-sec .video-slider-wrap .slick-list {
+  overflow: visible;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 80px;
+  padding-bottom: 7px;
+}
+.video-sec .slick-prev {
+  z-index: 1;
+}
+.video-sec .slick-disabled {
+  display: none !important;
+}
+.video-sec .slick-prev,
+.video-sec .slick-next {
+  background: linear-gradient(200.14deg, #000000 9.09%, rgba(0, 0, 0, 0) 86.58%) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 90px !important;
+  height: 272px !important;
+}
+.video-sec .slick-next::before {
+  content: " ";
+}
+.video-sec .show__slide {
+  padding: 0 0.5rem;
+}
+.video-sec .show__slide .video-img {
+  position: relative;
+}
+.video-sec .show__slide .video-img iframe {
+  border-radius: 27px;
+  max-height: 292px;
+  border: 7px solid #ffffff;
+}
+
+/*=======Video Section ends==========*/
+/**************************************************    MEDIA QUERY STARTS    *************************************************************/
+@media (max-width: 1200px) {
+  .navbar .navbar-nav .nav-item {
+    margin-right: 11px;
+  }
+}
+/*---for Small devices - MOBILE---*/
+@media screen and (max-width: 480px) {
+  .info {
+    width: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .top-section .menu {
+    display: none;
+  }
+  .top-section .search-wrap {
+    width: auto;
+    height: 100%;
+    margin: 1rem;
+  }
+  .banner-sec .blurOut {
+    font-size: 70px;
+    margin-top: 50px;
+    -webkit-animation: unset;
+            animation: unset;
+  }
+  .banner-sec .car-image {
+    top: -1rem;
+  }
+  .banner-sec .car-image .img-text {
+    top: 70%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-sec {
+    top: 0rem;
+  }
+  .about-sec .offset-lg-3 {
+    margin-left: auto !important;
+  }
+  .about-sec .left-img {
+    transform: translateY(15%);
+  }
+  .price-sec {
+    margin-top: 0rem;
+  }
+  .price-sec .mt-6 {
+    margin-top: 3rem;
+  }
+  .price-sec .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+  .price-sec .nav-tabs .nav-link.active {
+    font-size: 14px;
+  }
+  .price-sec .nav-tabs .nav-item {
+    margin-right: 15px;
+  }
+  .price-sec .varient-table .table thead tr th {
+    font-size: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .header {
+    font-size: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .sub-header {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .offer-btn {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .mileage-sec .table thead tr th {
+    font-size: 18px;
+  }
+  .mileage-sec .table tbody tr td {
+    font-size: 18px;
+  }
+  .advice-sec .m-top {
+    margin-top: 2rem;
+  }
+  .advice-sec .title {
+    font-size: 50px;
+  }
+  .advice-sec .sub-title {
+    font-size: 40px;
+    margin-bottom: -28px;
+  }
+  .advice-sec .header {
+    font-size: 50px;
+  }
+  .advice-sec .word {
+    font-size: 50px;
+  }
+  .advice-sec .sub-header {
+    font-size: 30px;
+  }
+  .advice-sec .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .advice-sec .border-top .green-text {
+    font-size: 28px;
+  }
+  .advice-sec .border-top .red-text {
+    font-size: 28px;
+  }
+  .advice-sec .nav-tabs .nav-link {
+    font-size: 18px;
+    line-height: 0px;
+    padding: 16px;
+  }
+  .review-sec {
+    top: 2rem;
+  }
+  .review-sec h5 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .review-sec h2 {
+    font-size: 40px;
+  }
+  .review-sec .m-left {
+    margin-left: 0;
+  }
+  .review-sec .border-rectangle {
+    width: auto;
+  }
+  .review-sec .border-rectangle p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .review-sec .rating-container {
+    font-size: 25px;
+  }
+  .review-sec .review-btn {
+    font-size: 14px;
+  }
+  .review-sec .review-count {
+    font-size: 13px;
+  }
+  .review-sec .v-more {
+    top: 103%;
+  }
+  .video-sec {
+    top: 5rem;
+  }
+  .video-sec .m-left {
+    margin-left: 0;
+  }
+  .video-sec h5 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .video-sec h2 {
+    font-size: 40px;
+  }
+  .video-sec p {
+    width: auto;
+    font-size: 18px;
+  }
+  .video-sec .img-m-left {
+    margin-left: 0;
+  }
+  .video-sec .slider {
+    width: 100%;
+  }
+  .video-sec .slider .slide img {
+    width: 100%;
+  }
+  .video-sec .slider .slick-prev {
+    left: -12px;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+  }
+  .video-sec .slider .slick-next {
+    right: -12px;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .banner-sec .car-image .img-text {
+    top: 80%;
+    font-size: 12px;
+  }
+  .advice-sec .nav-tabs .nav-link {
+    font-size: 14px;
+    line-height: 0px;
+    padding: 9px;
+  }
+  .review-sec h2 {
+    font-size: 30px;
+  }
+  .review-sec .word {
+    font-size: 30px;
+  }
+  .review-sec .review-count {
+    margin: 34px 0 0 10px;
+  }
+  .review-sec .review-btn {
+    line-height: 16px;
+  }
+  .review-sec .filter-btn {
+    font-size: 14px;
+    margin-right: 1rem;
+  }
+}
+/*---for medium devices - TABLET---*/
+@media screen and (min-width: 481px) and (max-width: 820px) {
+  .info {
+    width: auto;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .top-section .menu {
+    display: none;
+  }
+  .top-section .search-wrap {
+    width: auto;
+    height: 100%;
+    margin: 1rem;
+  }
+  .banner-sec .blurOut {
+    font-size: 130px;
+    margin-top: 50px;
+  }
+  .banner-sec .car-image {
+    top: -1rem;
+  }
+  .banner-sec .car-image .img-text {
+    top: 70%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-sec {
+    top: 0rem;
+  }
+  .about-sec .offset-lg-3 {
+    margin-left: auto !important;
+  }
+  .about-sec .left-img {
+    transform: translateY(15%);
+  }
+  .price-sec {
+    margin-top: 0rem;
+  }
+  .price-sec .mt-6 {
+    margin-top: 3rem;
+  }
+  .price-sec .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+  .price-sec .nav-tabs .nav-link.active {
+    font-size: 14px;
+  }
+  .price-sec .nav-tabs .nav-item {
+    margin-right: 15px;
+  }
+  .price-sec .varient-table .table thead tr th {
+    font-size: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .header {
+    font-size: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .sub-header {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .offer-btn {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .mileage-sec .table thead tr th {
+    font-size: 18px;
+  }
+  .mileage-sec .table tbody tr td {
+    font-size: 18px;
+  }
+  .advice-sec .m-top {
+    margin-top: 2rem;
+  }
+  .advice-sec .title {
+    font-size: 50px;
+  }
+  .advice-sec .sub-title {
+    font-size: 40px;
+    margin-bottom: -28px;
+  }
+  .advice-sec .header {
+    font-size: 50px;
+  }
+  .advice-sec .word {
+    font-size: 50px;
+  }
+  .advice-sec .sub-header {
+    font-size: 30px;
+  }
+  .advice-sec .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .advice-sec .border-top .green-text {
+    font-size: 28px;
+  }
+  .advice-sec .border-top .red-text {
+    font-size: 28px;
+  }
+  .advice-sec .nav-tabs .nav-link {
+    font-size: 20px;
+    line-height: 0px;
+    padding: 20px;
+  }
+  .review-sec {
+    top: 2rem;
+  }
+  .review-sec h5 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .review-sec h2 {
+    font-size: 40px;
+  }
+  .review-sec .m-left {
+    margin-left: 0;
+  }
+  .review-sec .border-rectangle {
+    width: auto;
+  }
+  .review-sec .border-rectangle p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .review-sec .v-more {
+    top: 108%;
+  }
+  .review-sec .review-btn {
+    font-size: 14px;
+  }
+  .video-sec {
+    top: 5rem;
+  }
+  .video-sec .m-left {
+    margin-left: 0;
+  }
+  .video-sec h5 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .video-sec h2 {
+    font-size: 40px;
+  }
+  .video-sec p {
+    width: auto;
+    font-size: 18px;
+  }
+  .video-sec .img-m-left {
+    margin-left: 0;
+  }
+  .video-sec .slider {
+    width: 100%;
+  }
+  .video-sec .slider .slide img {
+    width: 100%;
+  }
+  .video-sec .slider .slick-prev {
+    left: -12px;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+  }
+  .video-sec .slider .slick-next {
+    right: -12px;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+  }
+}
+/*---for large devices - LAPTOP, DESKTOP---*/
+@media screen and (min-width: 820px) and (max-width: 991px) {
+  .top-section .menu {
+    display: none;
+  }
+  .top-section .search-wrap {
+    width: auto;
+    height: 100%;
+    margin: 1rem;
+  }
+  .banner-sec .blurOut {
+    font-size: 180px;
+    margin-top: 50px;
+  }
+  .banner-sec .car-image {
+    top: -1rem;
+  }
+  .banner-sec .car-image .img-text {
+    top: 70%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-sec {
+    top: -5rem;
+  }
+  .about-sec .offset-lg-3 {
+    margin-left: auto !important;
+  }
+  .about-sec .left-img {
+    transform: translateY(15%);
+  }
+  .price-sec {
+    margin-top: 0rem;
+  }
+  .price-sec .mt-6 {
+    margin-top: 3rem;
+  }
+  .price-sec .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+  .price-sec .nav-tabs .nav-link.active {
+    font-size: 14px;
+  }
+  .price-sec .nav-tabs .nav-item {
+    margin-right: 15px;
+  }
+  .price-sec .varient-table .table thead tr th {
+    font-size: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .header {
+    font-size: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .sub-header {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .price-sec .varient-table .table tbody tr td .offer-btn {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .advice-sec .nav-tabs .nav-link {
+    font-size: 27px;
+    line-height: 0px;
+    padding: 21px;
+  }
+  .review-sec {
+    top: 2rem;
+  }
+  .review-sec h5 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .review-sec h2 {
+    font-size: 40px;
+  }
+  .review-sec .m-left {
+    margin-left: 0;
+  }
+  .review-sec .border-rectangle {
+    width: auto;
+  }
+  .review-sec .border-rectangle p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .review-sec .v-more {
+    top: 108%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1399px) {
+  .info {
+    width: auto;
+  }
+  .banner-sec .blurOut {
+    font-size: 200px;
+    margin-top: 140px;
+  }
+  .banner-sec .car-image {
+    top: -1rem;
+  }
+  .about-sec .offset-lg-3 {
+    margin-left: 5% !important;
+  }
+  .about-sec .left-img {
+    transform: translateY(15%);
+  }
+  .price-sec {
+    margin-top: -14rem;
+  }
+  .price-sec .nav-tabs .nav-item {
+    margin-right: 26px;
+  }
+  .advice-sec .nav-tabs .nav-link {
+    line-height: 0px;
+    padding: 35px;
+  }
+  .review-sec {
+    top: 2rem;
+  }
+  .review-sec h5 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .review-sec h2 {
+    font-size: 40px;
+  }
+  .review-sec .m-left {
+    margin-left: 0;
+  }
+  .review-sec .border-rectangle {
+    width: auto;
+  }
+  .review-sec .border-rectangle p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .review-sec .v-more {
+    top: 108%;
+  }
+}
+/*---for screen 540px ----*/
+@media screen and (min-width: 540px) and (max-width: 540px) {
+  .banner-sec .blurOut {
+    font-size: 90px;
+  }
+  .review-sec .v-more {
+    top: 104%;
+  }
+}
+/****************************************************    MEDIA QUERY ENDS      ***************************************************************//*# sourceMappingURL=style.css.map */
